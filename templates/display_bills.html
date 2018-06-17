@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bills</title>
+</head>
+<body>
+{% for bill in bills %}
+<table border="2">
+<tr>
+	<td>Friend name:</td>
+	<td>{{ bill.fname }}</td>
+</tr>
+<tr>
+	<td>Mobile number:</td>
+	<td>{{ bill.pnum }}</td>
+</tr>
+<tr>
+	<td>Address:</td>
+	<td>{{ bill.addrs }}</td>
+</tr>
+<tr>
+	<td>Amount:</td>
+	<td>{{ bill.amt }}</td>
+</tr>
+
+</table>
+{% endfor %}
+</body>
+</html>

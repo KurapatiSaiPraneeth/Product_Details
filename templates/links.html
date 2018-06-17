@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links</title>
+</head>
+<body>
+<table>
+      {% for d in details %}
+	<tr>
+		<td>Name:</td>
+		<td>{{ d.name }}</td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td>{{ d.email }}</td>
+	</tr>
+    <tr>
+        <td>Mobile number:</td>
+        <td>{{ d.phone }}</td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td>{{ d.addr }}</td>
+    </tr>
+    {% endfor %}
+
+	<tr><br>
+		<td><a href="./Expense"><input type="submit" value="Click me to track your expenses."></a></td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+		<td><a href="./Split"><input type="submit" value="Click me to split bills with your friends."></a></td>
+	</tr>
+	</table>
+</body>
+</html>
